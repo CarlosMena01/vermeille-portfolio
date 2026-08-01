@@ -177,16 +177,74 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalBackdrop = document.getElementById('modalBackdrop');
   let lastFocused = null;
 
+  /* ---------------- Carousel (galerie du projet) ---------------- */
+  let carousel = null;
+
+  const buildCarousel = (project) => {
+    const slides = project.gallery;
+    const single = slides.length <= 1;
+
+    return `
+      <div class="carousel${single ? ' carousel--single' : ''}" id="carousel">
+        <div class="carousel__viewport">
+          <div class="carousel__track" id="carouselTrack">
+            ${slides.map((src, i) => `
+              <div class="carousel__slide">
+                <img src="${src}" alt="${project.title} — image ${i + 1}" loading="${i === 0 ? 'eager' : 'lazy'}">
+              </div>
+            `).join('')}
+          </div>
+          <button class="carousel__btn carousel__btn--prev" id="carouselPrev" aria-label="Image précédente">‹</button>
+          <button class="carousel__btn carousel__btn--next" id="carouselNext" aria-label="Image suivante">›</button>
+          <span class="carousel__counter" id="carouselCounter">1 / ${slides.length}</span>
+        </div>
+        <div class="carousel__dots" id="carouselDots">
+          ${slides.map((_, i) => `
+            <button class="carousel__dot${i === 0 ? ' is-active' : ''}" data-index="${i}" aria-label="Aller à l'image ${i + 1}"></button>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  };
+
+  const initCarousel = (total) => {
+    const track = document.getElementById('carouselTrack');
+    if (!track) return null;
+
+    const dots = Array.from(document.querySelectorAll('.carousel__dot'));
+    const counter = document.getElementById('carouselCounter');
+    let index = 0;
+
+    const goTo = (i) => {
+      index = (i + total) % total;
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((d, n) => d.classList.toggle('is-active', n === index));
+      if (counter) counter.textContent = `${index + 1} / ${total}`;
+    };
+
+    document.getElementById('carouselPrev').addEventListener('click', () => goTo(index - 1));
+    document.getElementById('carouselNext').addEventListener('click', () => goTo(index + 1));
+    dots.forEach(dot => dot.addEventListener('click', () => goTo(Number(dot.dataset.index))));
+
+    // swipe tactile
+    let startX = null;
+    track.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', (e) => {
+      if (startX === null) return;
+      const delta = e.changedTouches[0].clientX - startX;
+      if (Math.abs(delta) > 45) goTo(delta < 0 ? index + 1 : index - 1);
+      startX = null;
+    });
+
+    return { prev: () => goTo(index - 1), next: () => goTo(index + 1) };
+  };
+
   function openModal(id) {
     const project = PROJECTS.find(p => p.id === id);
     if (!project) return;
 
-    const galleryClass = project.gallery.length <= 1 ? 'modal__gallery modal__gallery--single' : 'modal__gallery';
-
     modalBody.innerHTML = `
-      <div class="${galleryClass}">
-        ${project.gallery.map(src => `<img src="${src}" alt="${project.title}" loading="lazy">`).join('')}
-      </div>
+      ${buildCarousel(project)}
       <span class="modal__tag">${project.categoryLabel}</span>
       <h2 class="modal__title" id="modalTitle">${project.title}</h2>
       <p class="modal__subtitle">${project.subtitle}</p>
@@ -195,6 +253,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ${project.tags.map(t => `<span class="modal__chip">${t}</span>`).join('')}
       </div>
     `;
+
+    carousel = project.gallery.length > 1 ? initCarousel(project.gallery.length) : null;
 
     lastFocused = document.activeElement;
     modal.classList.add('is-open');
@@ -207,13 +267,18 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.remove('is-open');
     modal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+    carousel = null;
     if (lastFocused) lastFocused.focus();
   }
 
   modalClose.addEventListener('click', closeModal);
   modalBackdrop.addEventListener('click', closeModal);
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    if (!modal.classList.contains('is-open')) return;
+    if (e.key === 'Escape') closeModal();
+    if (!carousel) return;
+    if (e.key === 'ArrowLeft') carousel.prev();
+    if (e.key === 'ArrowRight') carousel.next();
   });
 
 });
