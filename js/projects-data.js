@@ -55,11 +55,9 @@ const PROJECTS = [
     subtitle: "Brochure Richou Voyages",
     category: "visuelles",
     categoryLabel: "Identités visuelles",
-    cover: "assets/img/pictogrammes-cover.jpg",
+    cover: "assets/img/pictogrammes-detail-1.jpg",
     gallery: [
-      "assets/img/pictogrammes-cover.jpg",
-      "assets/img/pictogrammes-detail-1.jpg",
-      "assets/img/pictogrammes-detail-2.jpg"
+      "assets/img/pictogrammes-detail-1.jpg"
     ],
     description: "Chaque année, Richou Voyages publie deux brochures afin de présenter et de promouvoir ses différents voyages organisés auprès de ses clients. Pour simplifier la compréhension des informations et alléger la mise en page, j'ai été chargée de créer des pictogrammes vectoriels respectant la charte graphique et garantissant une cohérence avec l'ensemble des brochures.",
     tags: ["Pictogrammes", "Système vectoriel"]
@@ -76,8 +74,7 @@ const PROJECTS = [
       "assets/img/vagabond-cover.png",
       "assets/img/vagabond-detail-1.png",
       "assets/img/vagabond-detail-2.png",
-      "assets/img/vagabond-detail-4.png",
-      "assets/img/vagabond-detail-3.jpg"
+      "assets/img/vagabond-detail-4.png"
     ],
     description: "J'ai réalisé l'identité graphique de Vagabond, une application de mobilité qui prône la flânerie et la découverte. Les utilisateurs ne choisissent pas l'itinéraire le plus rapide, mais un parcours les guidant vers des œuvres de street art, des parcs, des architectures singulières et d'autres lieux d'intérêt. Le but était de concevoir l'identité visuelle, la première version de l'application pour l'agglomération d'Angers, ainsi qu'une campagne de communication pour son lancement.",
     tags: ["App mobile", "Logo", "Campagne de lancement"]

@@ -26,12 +26,14 @@
      Scandia  -> Hanken Grotesk (grotesque humaniste, grande hauteur d'x)
      Sofia Pro-> Nunito Sans    (géométrique arrondie, 'a' à deux étages)
      Logo manuscrit -> Gluten   (manuscrite épaisse à terminaisons rondes) */
-  --font-display:  'Hanken Grotesk', system-ui, sans-serif;
+  /* --font-display:  'Hanken Grotesk', system-ui, sans-serif; */
   /* --font-subtitle: 'Nunito Sans', 'Hanken Grotesk', system-ui, sans-serif; */
   /* --font-script:   'Gluten', cursive; */
+  --font-display:  "scandia-web", sans-serif;
   --font-subtitle: "scandia-web", sans-serif;
   --font-script:    "scandia-web", sans-serif;
   --font-body:     'Poppins', system-ui, sans-serif;
+  --font-subtitle-v2: "sofia-pro", sans-serif;
 
   /* --- layout --- */
   --container-w: 1180px;
@@ -100,7 +102,7 @@ ul{ margin:0; padding:0; list-style:none; }
 .eyebrow{
   font-family: var(--font-display);
   font-weight: 600;
-  color: var(--coral-dark);
+  color: var( --coral);
   text-transform: uppercase;
   letter-spacing: .14em;
   font-size: 0.8rem;
@@ -110,7 +112,7 @@ ul{ margin:0; padding:0; list-style:none; }
 
 .section-title{
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 500;
   font-size: clamp(1.7rem, 3.4vw, 2.6rem);
   line-height: 1.25;
   max-width: 760px;
@@ -143,7 +145,7 @@ ul{ margin:0; padding:0; list-style:none; }
 .btn--primary:hover{
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 20px 34px -12px rgba(var(--coral-rgb), 0.55);
-  background: var(--coral-dark);
+  background: var( --coral);
 }
 .btn--ghost{
   background: transparent;
@@ -153,7 +155,7 @@ ul{ margin:0; padding:0; list-style:none; }
 .btn--ghost:hover{
   transform: translateY(-3px) scale(1.03);
   border-color: var(--coral);
-  color: var(--coral-dark);
+  color: var( --coral);
 }
 
 /* ---------------------------------------------------------
@@ -407,7 +409,7 @@ ul{ margin:0; padding:0; list-style:none; }
 }
 .hero__kicker{
   font-family: var(--font-display);
-  color: var(--coral-dark);
+  color: var( --coral);
   font-weight: 500;
   letter-spacing: .08em;
   text-transform: uppercase;
@@ -606,7 +608,7 @@ ul{ margin:0; padding:0; list-style:none; }
 .timeline-item__date{
   font-family: var(--font-display);
   font-weight: 600;
-  color: var(--coral-dark);
+  color: var( --coral);
   font-size: .85rem;
   text-transform: uppercase;
   letter-spacing: .06em;
@@ -624,14 +626,15 @@ ul{ margin:0; padding:0; list-style:none; }
   box-shadow: 0 26px 50px -22px rgba(42,33,28,.3);
 }
 .timeline-item__title{
-  font-family: var(--font-subtitle);
+  font-family: var(--font-subtitle-v2);
+  font-style: normal;
   font-weight: 700;
   font-size: 1.15rem;
   margin: 0 0 4px;
 }
 .timeline-item__place{
-  font-family: var(--font-subtitle);
-  color: var(--coral-dark);
+  font-family: var(--font-subtitle-v2);
+  color: var( --coral);
   font-weight: 500;
   font-size: .92rem;
   margin: 0 0 10px;
@@ -670,7 +673,7 @@ ul{ margin:0; padding:0; list-style:none; }
 }
 .filter-btn:hover{
   border-color: var(--coral);
-  color: var(--coral-dark);
+  color: var( --coral);
   transform: translateY(-2px);
 }
 .filter-btn.is-active{
@@ -741,7 +744,7 @@ ul{ margin:0; padding:0; list-style:none; }
   position: absolute;
   top: 14px; left: 14px;
   background: rgba(251,243,234,.92);
-  color: var(--coral-dark);
+  color: var( --coral);
   font-family: var(--font-display);
   font-weight: 500;
   font-size: .72rem;
@@ -755,8 +758,9 @@ ul{ margin:0; padding:0; list-style:none; }
   padding: 18px 20px 22px;
 }
 .card__title{
-  font-family: var(--font-subtitle);
-  font-weight: 700;
+  font-family: var(--font-subtitle-v2);
+  font-weight: 900;
+  font-style: normal;
   font-size: 1.05rem;
   margin: 0 0 4px;
 }
@@ -837,7 +841,7 @@ ul{ margin:0; padding:0; list-style:none; }
   position: relative;
   z-index: 1;
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 500;
   font-size: clamp(1.9rem, 4vw, 3rem);
   line-height: 1.18;
   max-width: 640px;
@@ -858,7 +862,7 @@ ul{ margin:0; padding:0; list-style:none; }
   z-index: 1;
   font-family: var(--font-display);
   color: rgba(251,243,234,.72);
-  max-width: 480px;
+  max-width: 520px;
   font-size: 1.02rem;
   line-height: 1.7;
   margin: 0;
@@ -939,7 +943,7 @@ ul{ margin:0; padding:0; list-style:none; }
   box-shadow: var(--shadow-pop);
 }
 .btn--script:hover{
-  background: var(--coral-dark);
+  background: var( --coral);
   transform: translateY(-3px) scale(1.03);
 }
 .contact__spark--btn{ color: var(--lavender-light); }
@@ -1185,14 +1189,14 @@ ul{ margin:0; padding:0; list-style:none; }
   margin-bottom: 16px;
 }
 .modal__title{
-  font-family: var(--font-subtitle);
+  font-family: var(--font-subtitle-v2);
   font-weight: 700;
   font-size: clamp(1.5rem, 3vw, 2.1rem);
   margin: 0 0 6px;
 }
 .modal__subtitle{
-  font-family: var(--font-subtitle);
-  color: var(--coral-dark);
+  font-family: var(--font-subtitle-v2);
+  color: var(--coral);
   font-weight: 500;
   margin: 0 0 22px;
 }
