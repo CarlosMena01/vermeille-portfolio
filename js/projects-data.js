@@ -256,25 +256,97 @@ const PROJECTS = [
     tags: ["Illustration vectorielle", "Voyage"]
   },
   {
-    id: "illustrations-affiches",
-    title: "Affiches illustrées",
-    subtitle: "Série personnelle",
+    id: "illustration-lisbonne",
+    title: "Lisbonne",
+    subtitle: "Illustration de voyage",
     category: "illustrations",
     categoryLabel: "Illustrations",
     cover: "assets/img/illustration-lisbonne.png",
     gallery: [
-      "assets/img/illustration-lisbonne.png",
+      "assets/img/illustration-lisbonne.png"
+    ],
+    description: "Affiche de voyage consacrée à Lisbonne, construite autour des façades colorées et de leurs azulejos. Un travail sur les motifs et les aplats pour restituer l'atmosphère des rues en pente de la ville.",
+    tags: ["Illustration vectorielle", "Affiche", "Voyage"]
+  },
+  {
+    id: "illustration-route",
+    title: "Sur la route",
+    subtitle: "Vernet-les-Bains & Lohéac",
+    category: "illustrations",
+    categoryLabel: "Illustrations",
+    cover: "assets/img/illustration-vernet.png",
+    gallery: [
       "assets/img/illustration-vernet.png",
-      "assets/img/illustration-loheac.png",
-      "assets/img/illustration-venise.png",
-      "assets/img/illustration-plage.png",
-      "assets/img/illustration-fenetre.png",
-      "assets/img/illustration-architecture.png",
+      "assets/img/illustration-loheac.png"
+    ],
+    description: "Deux affiches de voyage autour du véhicule et de l'évasion : un combi Volkswagen sur une route de montagne à Vernet-les-Bains, et une américaine des années 50 pour Lohéac. Même format et même traitement en aplats vectoriels pour former une série cohérente.",
+    tags: ["Illustration vectorielle", "Affiche", "Voyage"]
+  },
+  {
+    id: "illustration-venise",
+    title: "Venise",
+    subtitle: "Illustration isométrique",
+    category: "illustrations",
+    categoryLabel: "Illustrations",
+    cover: "assets/img/illustration-venise.png",
+    gallery: [
+      "assets/img/illustration-venise.png"
+    ],
+    description: "Scène vénitienne en vue isométrique : un canal, son pont et ses façades pastel reconstitués comme une maquette. Un exercice de construction géométrique et de palette adoucie.",
+    tags: ["Illustration vectorielle", "Isométrie"]
+  },
+  {
+    id: "illustration-plage",
+    title: "Bord de mer",
+    subtitle: "Illustration d'ambiance",
+    category: "illustrations",
+    categoryLabel: "Illustrations",
+    cover: "assets/img/illustration-plage.png",
+    gallery: [
+      "assets/img/illustration-plage.png"
+    ],
+    description: "Deux silhouettes accoudées à une rambarde sous un parasol, face à un coucher de soleil sur la mer. Une illustration tout en dégradés chauds, centrée sur la lumière de fin de journée.",
+    tags: ["Illustration vectorielle", "Ambiance"]
+  },
+  {
+    id: "illustration-fenetre",
+    title: "Vue sur mer",
+    subtitle: "Illustration d'intérieur",
+    category: "illustrations",
+    categoryLabel: "Illustrations",
+    cover: "assets/img/illustration-fenetre.png",
+    gallery: [
+      "assets/img/illustration-fenetre.png"
+    ],
+    description: "Une pièce ouverte sur la mer, ses murs couverts de petites affiches encadrées. Un travail sur la perspective et sur le contraste entre l'intérieur clair et le bleu profond de l'extérieur.",
+    tags: ["Illustration vectorielle", "Intérieur"]
+  },
+  {
+    id: "illustration-architecture",
+    title: "Perspective",
+    subtitle: "Illustration d'architecture",
+    category: "illustrations",
+    categoryLabel: "Illustrations",
+    cover: "assets/img/illustration-architecture.png",
+    gallery: [
+      "assets/img/illustration-architecture.png"
+    ],
+    description: "Composition architecturale en volumes simples, traitée dans une gamme de roses et de bleus poudrés. Une recherche graphique sur la lumière, les ombres portées et l'épure des formes.",
+    tags: ["Illustration vectorielle", "Architecture"]
+  },
+  {
+    id: "illustration-affiches-pop",
+    title: "Affiches pop",
+    subtitle: "Série décorative",
+    category: "illustrations",
+    categoryLabel: "Illustrations",
+    cover: "assets/img/illustration-aperol.jpg",
+    gallery: [
       "assets/img/illustration-aperol.jpg",
       "assets/img/illustration-bottes.jpg"
     ],
-    description: "Série d'affiches et d'illustrations vectorielles réalisées sur Illustrator, entre affiches de voyage (Lisbonne, Venise, Vernet-les-Bains, Lohéac) et compositions plus graphiques pensées comme des affiches décoratives. Un terrain de jeu pour explorer la couleur, le cadrage et les aplats.",
-    tags: ["Illustration vectorielle", "Affiche", "Série personnelle"]
+    description: "Deux affiches décoratives pensées pour une chambre : un spritz sur damier ondulé et une paire de bottes santiag fleuries. Palette saturée de roses et d'oranges, formes pleines et motifs assumés.",
+    tags: ["Illustration vectorielle", "Affiche", "Décoration"]
   },
   {
     id: "photos-personnelles",
