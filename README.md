@@ -2,7 +2,7 @@
 
 <img src="assets/img/logo-vermeille-color.png" alt="Vermeille — Graphisme" width="180">
 
-### Portfolio de **Vermeille Pontoire** — graphiste freelance
+### Portfolio de **Vermeille Pontoire** — graphiste
 
 Sitio web de una sola página: identidades visuales, print, ilustración y fotografía.
 
@@ -41,6 +41,15 @@ Sitio web de una sola página: identidades visuales, print, ilustración y fotog
 | Manuscrita del logo | — | **Gluten** |
 | Texto corrido | — | **Poppins** |
 
+### Cambiar una tipografía
+
+Solo hay que tocar dos sitios:
+
+1. El `<link>` de Google Fonts en [`index.html`](index.html) (cabecera).
+2. La variable correspondiente en `:root` de [`css/style.css`](css/style.css) — `--font-display`, `--font-subtitle`, `--font-script` o `--font-body`.
+
+Si la fuente es de pago o local, súbela a `assets/fonts/` y declara un `@font-face` en lugar del `<link>`.
+
 ## 📁 Estructura
 
 ```
@@ -66,5 +75,5 @@ Para añadir un proyecto, basta con crear una entrada nueva en `PROJECTS` (`js/p
 ---
 
 <div align="center">
-<sub>© 2026 Vermeille Pontoire — Graphiste freelance</sub>
+<sub>© 2026 Vermeille Pontoire — Graphiste</sub>
 </div>
