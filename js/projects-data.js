@@ -7,14 +7,11 @@ const PROJECTS = [
     subtitle: "Identité de marque personnelle",
     category: "visuelles",
     categoryLabel: "Identités visuelles",
-    cover: "assets/img/brand-vermeille-cover.jpg",
+    cover: "assets/img/brand-vermeille-cover.png",
     gallery: [
       "assets/img/brand-vermeille-logo.png",
-      "assets/img/brand-vermeille-cover.jpg",
-      "assets/img/brand-vermeille-card-1.jpg",
-      "assets/img/brand-vermeille-card-2.jpg",
-      "assets/img/brand-vermeille-detail-1.jpg",
-      "assets/img/brand-vermeille-detail-2.jpg"
+      "assets/img/brand-vermeille-cover.png",
+      "assets/img/brand-vermeille-detail-1.png"
     ],
     description: "Création de l'identité visuelle et de plusieurs supports de communication liés à ma marque personnelle, si je créais un jour un studio de graphisme. Logo réalisé sur Illustrator dans un esprit enfantin et moelleux afin de refléter le côté chaleureux et dynamique de mon studio.",
     tags: ["Logo", "Charte graphique", "Papeterie"]
