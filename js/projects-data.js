@@ -389,10 +389,10 @@ const PROJECTS = [
 
 const TIMELINE = {
   formation: [
-    { date: "2018 — 2019", title: "BAC STD2A", place: "Lycée Jeanne Delanoue, Cholet", desc: "Baccalauréat Sciences et Technologies du Design et des Arts Appliqués." },
-    { date: "Juillet 2020", title: "BTS Communication", place: "ESUPEC, Cholet", desc: "Obtention de mon BTS Communication." },
-    { date: "Juin 2022", title: "Bachelor Infographie", place: "Studio M — école de l'ESPL, Angers", desc: "Obtention de mon Bachelor Infographie." },
-    { date: "Aujourd'hui", title: "Bachelor Design Graphique", place: "EEGP, Angers", desc: "Obtention de mon Bachelor Design Graphique." }
+    { date: "Juillet 2020", title: "BAC STD2A", place: "Lycée Jeanne Delanoue, Cholet", desc: "Baccalauréat Sciences et Technologies du Design et des Arts Appliqués." },
+    { date: "Juin 2022", title: "BTS Communication", place: "ESUPEC, Cholet", desc: "Obtention de mon BTS Communication." },
+    { date: "Juillet 2023", title: "Bachelor Infographie", place: "Studio M — école de l'ESPL, Angers", desc: "Obtention de mon Bachelor Infographie." },
+    { date: "Septembre 2024", title: "Bachelor Design Graphique", place: "EEGP, Angers", desc: "Obtention de mon Bachelor Design Graphique." }
   ],
   experience: [
     { date: "Juin 2018", title: "Graphiste (stage)", place: "Publi Impress, La Séguinière", desc: "Première expérience en agence de communication visuelle." },

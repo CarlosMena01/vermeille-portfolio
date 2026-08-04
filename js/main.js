@@ -98,7 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="timeline-item__card">
           <h3 class="timeline-item__title">${item.title}</h3>
           <p class="timeline-item__place">${item.place}</p>
-          <p class="timeline-item__desc">${item.desc}</p>
         </div>
       </div>
     `).join('');
