@@ -9,6 +9,7 @@ const PROJECTS = [
     categoryLabel: "Identités visuelles",
     cover: "assets/img/brand-vermeille-cover.jpg",
     gallery: [
+      "assets/img/brand-vermeille-logo.png",
       "assets/img/brand-vermeille-cover.jpg",
       "assets/img/brand-vermeille-card-1.jpg",
       "assets/img/brand-vermeille-card-2.jpg",
@@ -24,12 +25,12 @@ const PROJECTS = [
     subtitle: "Identité visuelle — version 1",
     category: "visuelles",
     categoryLabel: "Identités visuelles",
-    cover: "assets/img/festival-v1-cover.jpg",
+    cover: "assets/img/festival-v1-cover.png",
     gallery: [
-      "assets/img/festival-v1-cover.jpg",
-      "assets/img/festival-v1-detail-1.jpg",
-      "assets/img/festival-v1-detail-2.jpg",
-      "assets/img/festival-v1-detail-3.jpg"
+      "assets/img/festival-v1-cover.png",
+      "assets/img/festival-v1-detail-1.png",
+      "assets/img/festival-v1-detail-2.png",
+      "assets/img/festival-v1-detail-3.png"
     ],
     description: "Création de l'identité visuelle d'un festival de cinéma espagnol, avec la contrainte de réaliser une typographie pour tout un alphabet, ainsi que différents supports de communication demandés pour l'événement : carton d'invitation, affiche, cartes de visite, page de site internet, logo et quelques goodies. Nous avons fait plusieurs propositions avant de sélectionner la meilleure, que j'ai déclinée ensuite.",
     tags: ["Typographie sur-mesure", "Affiche", "Goodies"]
@@ -40,10 +41,10 @@ const PROJECTS = [
     subtitle: "Identité visuelle — version 2",
     category: "visuelles",
     categoryLabel: "Identités visuelles",
-    cover: "assets/img/festival-v2-cover.jpg",
+    cover: "assets/img/festival-v2-cover.png",
     gallery: [
-      "assets/img/festival-v2-cover.jpg",
-      "assets/img/festival-v2-detail-1.jpg"
+      "assets/img/festival-v2-cover.png",
+      "assets/img/festival-v2-detail-1.png"
     ],
     description: "Durant ce projet, j'ai réalisé deux versions différentes, avec deux identités visuelles proches mais reposant sur des concepts distincts. Pour cette version, le concept consistait à réutiliser la forme rectangulaire visible dans le viseur d'une caméra au moment du tournage. Création de l'identité visuelle, comprenant le logo et les affiches.",
     tags: ["Concept", "Logo", "Affiches"]
@@ -69,12 +70,13 @@ const PROJECTS = [
     subtitle: "Application de mobilité douce",
     category: "visuelles",
     categoryLabel: "Identités visuelles",
-    cover: "assets/img/vagabond-cover.jpg",
+    cover: "assets/img/vagabond-cover.png",
     gallery: [
-      "assets/img/vagabond-logo.jpg",
-      "assets/img/vagabond-cover.jpg",
-      "assets/img/vagabond-detail-1.jpg",
-      "assets/img/vagabond-detail-2.jpg",
+      "assets/img/vagabond-logo.png",
+      "assets/img/vagabond-cover.png",
+      "assets/img/vagabond-detail-1.png",
+      "assets/img/vagabond-detail-2.png",
+      "assets/img/vagabond-detail-4.png",
       "assets/img/vagabond-detail-3.jpg"
     ],
     description: "J'ai réalisé l'identité graphique de Vagabond, une application de mobilité qui prône la flânerie et la découverte. Les utilisateurs ne choisissent pas l'itinéraire le plus rapide, mais un parcours les guidant vers des œuvres de street art, des parcs, des architectures singulières et d'autres lieux d'intérêt. Le but était de concevoir l'identité visuelle, la première version de l'application pour l'agglomération d'Angers, ainsi qu'une campagne de communication pour son lancement.",
@@ -86,13 +88,13 @@ const PROJECTS = [
     subtitle: "Refonte des entités Richou Voyages",
     category: "visuelles",
     categoryLabel: "Identités visuelles",
-    cover: "assets/img/cohezia-cover.jpg",
+    cover: "assets/img/cohezia-cover.png",
     gallery: [
-      "assets/img/cohezia-cover.jpg",
-      "assets/img/cohezia-detail-1.jpg",
-      "assets/img/cohezia-detail-2.jpg",
-      "assets/img/cohezia-detail-3.jpg",
-      "assets/img/cohezia-detail-4.jpg"
+      "assets/img/cohezia-cover.png",
+      "assets/img/cohezia-detail-1.png",
+      "assets/img/cohezia-detail-2.png",
+      "assets/img/cohezia-detail-3.png",
+      "assets/img/cohezia-detail-4.png"
     ],
     description: "J'ai eu pour projet de concevoir les identités visuelles et la charte graphique de chacune des entités, en m'adaptant à l'identité existante de Richou Voyages, afin que l'on comprenne que ces marques font partie de l'entreprise. Ensuite, j'ai dû décliner différents supports en fonction des marques.",
     tags: ["Charte graphique", "Papeterie", "Déclinaisons de marque"]
@@ -103,11 +105,12 @@ const PROJECTS = [
     subtitle: "Jeu de cartes pour enfants",
     category: "visuelles",
     categoryLabel: "Identités visuelles",
-    cover: "assets/img/cardgame-cover.jpg",
+    cover: "assets/img/cardgame-cover.png",
     gallery: [
-      "assets/img/cardgame-cover.jpg",
-      "assets/img/cardgame-detail-1.jpg",
-      "assets/img/cardgame-detail-2.jpg"
+      "assets/img/cardgame-cover.png",
+      "assets/img/cardgame-detail-1.png",
+      "assets/img/cardgame-detail-2.png",
+      "assets/img/illustration-cartes.jpg"
     ],
     description: "Réalisation d'un jeu de cartes pour les enfants avec différents mini-jeux dans un même jeu. Création d'un logo, d'une boîte de jeu, des visuels des cartes « caractères », des cartes « lettres » et des cartes « calques », ainsi que d'un support pour les règles du jeu.",
     tags: ["Packaging", "Illustration", "Jeu"]
@@ -118,11 +121,11 @@ const PROJECTS = [
     subtitle: "Richou Voyages",
     category: "print",
     categoryLabel: "Print et Édition",
-    cover: "assets/img/brochure-inspiration-cover.jpg",
+    cover: "assets/img/brochure-inspiration-cover.png",
     gallery: [
-      "assets/img/brochure-inspiration-cover.jpg",
-      "assets/img/brochure-inspiration-detail-1.jpg",
-      "assets/img/brochure-inspiration-detail-2.jpg"
+      "assets/img/brochure-inspiration-cover.png",
+      "assets/img/brochure-inspiration-detail-1.png",
+      "assets/img/brochure-inspiration-detail-2.png"
     ],
     description: "Richou Voyages a sorti une nouvelle brochure dans le but de promouvoir des voyages auprès d'une cible plus jeune : familles, couples, solos… et souhaitait une brochure entièrement repensée, à l'image de cette nouvelle cible. J'ai donc eu pour objectif de réaliser toute la création et la mise en page de cette brochure.",
     tags: ["Mise en page", "Édition"]
@@ -133,10 +136,10 @@ const PROJECTS = [
     subtitle: "Richou Voyages",
     category: "print",
     categoryLabel: "Print et Édition",
-    cover: "assets/img/brochure-annuelle-cover.jpg",
+    cover: "assets/img/brochure-annuelle-cover.png",
     gallery: [
-      "assets/img/brochure-annuelle-cover.jpg",
-      "assets/img/brochure-annuelle-detail-1.jpg"
+      "assets/img/brochure-annuelle-cover.png",
+      "assets/img/brochure-annuelle-detail-1.png"
     ],
     description: "Richou Voyages sort tous les ans une brochure annuelle avec des voyages pour l'été et l'hiver, destinée à une cible de personnes âgées qui souhaitent voyager avec des séjours entièrement organisés, accompagnés d'un guide et d'accompagnateurs. Mon objectif était de réaliser la couverture de cette brochure, ainsi que la mise en page des pages annexes et des pages produits.",
     tags: ["Couverture", "Mise en page"]
@@ -147,12 +150,12 @@ const PROJECTS = [
     subtitle: "Richou Voyages",
     category: "print",
     categoryLabel: "Print et Édition",
-    cover: "assets/img/pochette-cadeau-cover.jpg",
+    cover: "assets/img/pochette-cadeau-cover.png",
     gallery: [
-      "assets/img/pochette-cadeau-cover.jpg",
+      "assets/img/pochette-cadeau-cover.png",
       "assets/img/pochette-cadeau-detail-1.jpg",
-      "assets/img/pochette-cadeau-detail-2.jpg",
-      "assets/img/pochette-cadeau-detail-3.jpg",
+      "assets/img/pochette-cadeau-detail-2.png",
+      "assets/img/pochette-cadeau-detail-3.png",
       "assets/img/pochette-cadeau-detail-4.jpg"
     ],
     description: "J'ai eu pour objectif de réaliser une pochette cadeau que l'on puisse remplir en fonction du client et du voyage offert. La contrainte était de faire quelque chose de moderne, qui rappelle le voyage et dans un format assez important pour que l'on puisse y glisser les documents liés au voyage en format A5. J'ai donc réalisé deux versions différentes.",
@@ -166,7 +169,8 @@ const PROJECTS = [
     categoryLabel: "Print et Édition",
     cover: "assets/img/gobelet-cover.png",
     gallery: [
-      "assets/img/gobelet-cover.png"
+      "assets/img/gobelet-cover.png",
+      "assets/img/gobelet-detail-1.png"
     ],
     description: "Réalisation d'un visuel pour un gobelet sur le thème des bords de Loire pour un festival organisé par la marque de bière La Piautre. Conception de l'illustration sur Illustrator.",
     tags: ["Illustration", "Packaging"]
@@ -177,9 +181,9 @@ const PROJECTS = [
     subtitle: "Projet fictif — pochette d'album",
     category: "print",
     categoryLabel: "Print et Édition",
-    cover: "assets/img/orelsan-cover.jpg",
+    cover: "assets/img/orelsan-cover.png",
     gallery: [
-      "assets/img/orelsan-cover.jpg",
+      "assets/img/orelsan-cover.png",
       "assets/img/orelsan-detail-1.png",
       "assets/img/orelsan-detail-2.png"
     ],
@@ -192,10 +196,10 @@ const PROJECTS = [
     subtitle: "Affiche de campagne — projet fictif",
     category: "print",
     categoryLabel: "Print et Édition",
-    cover: "assets/img/absolut-cover.jpg",
+    cover: "assets/img/absolut-cover.png",
     gallery: [
-      "assets/img/absolut-cover.jpg",
-      "assets/img/absolut-detail-1.jpg"
+      "assets/img/absolut-cover.png",
+      "assets/img/absolut-detail-1.png"
     ],
     description: "Réalisation d'une affiche pour la sortie de la nouvelle bouteille « Absolut » de la marque de vodka, avec comme thème de campagne la mythologie. J'ai décidé de réutiliser l'image de Méduse ainsi que l'idée de ses cheveux de serpent, tout en y mêlant une notion artistique avec des illustrations à la manière d'Andy Warhol.",
     tags: ["Affiche", "Projet fictif"]
@@ -206,13 +210,13 @@ const PROJECTS = [
     subtitle: "Tote bag — Studio M",
     category: "print",
     categoryLabel: "Print et Édition",
-    cover: "assets/img/serigraphie-artisanale-cover.jpg",
+    cover: "assets/img/serigraphie-artisanale-cover.png",
     gallery: [
-      "assets/img/serigraphie-artisanale-cover.jpg",
-      "assets/img/serigraphie-artisanale-detail-1.jpg",
-      "assets/img/serigraphie-artisanale-detail-2.jpg",
-      "assets/img/serigraphie-artisanale-detail-3.jpg",
-      "assets/img/serigraphie-artisanale-detail-4.jpg"
+      "assets/img/serigraphie-artisanale-cover.png",
+      "assets/img/serigraphie-artisanale-detail-1.png",
+      "assets/img/serigraphie-artisanale-detail-2.png",
+      "assets/img/serigraphie-artisanale-detail-3.png",
+      "assets/img/serigraphie-artisanale-detail-4.png"
     ],
     description: "Durant mes études à Studio M, j'ai eu l'occasion de réaliser un motif en sérigraphie manuelle. Le but était tout d'abord de créer un motif sur Illustrator, puis de l'incruster sur un support à l'aide de la technique manuelle de la sérigraphie, pour l'imprimer sur un tote bag.",
     tags: ["Sérigraphie manuelle", "Motif"]
@@ -226,7 +230,7 @@ const PROJECTS = [
     cover: "assets/img/serigraphie-plat-cover.jpg",
     gallery: [
       "assets/img/serigraphie-plat-cover.jpg",
-      "assets/img/serigraphie-plat-detail-1.jpg"
+      "assets/img/serigraphie-plat-detail-1.png"
     ],
     description: "Réalisation d'une illustration sur un thème choisi sur le logiciel Illustrator afin de l'imprimer dans une imprimerie que nous avons eu la chance de visiter, avec la technique d'impression de la sérigraphie.",
     tags: ["Sérigraphie", "Illustration"]
@@ -256,6 +260,27 @@ const PROJECTS = [
     ],
     description: "Scène illustrée d'une terrasse en Cappadoce au coucher du soleil, entre cheminées de fées et tapis traditionnels. Un travail sur la lumière et la couleur pour transmettre l'ambiance chaleureuse d'un voyage en Turquie.",
     tags: ["Illustration vectorielle", "Voyage"]
+  },
+  {
+    id: "illustrations-affiches",
+    title: "Affiches illustrées",
+    subtitle: "Série personnelle",
+    category: "illustrations",
+    categoryLabel: "Illustrations",
+    cover: "assets/img/illustration-lisbonne.png",
+    gallery: [
+      "assets/img/illustration-lisbonne.png",
+      "assets/img/illustration-vernet.png",
+      "assets/img/illustration-loheac.png",
+      "assets/img/illustration-venise.png",
+      "assets/img/illustration-plage.png",
+      "assets/img/illustration-fenetre.png",
+      "assets/img/illustration-architecture.png",
+      "assets/img/illustration-aperol.jpg",
+      "assets/img/illustration-bottes.jpg"
+    ],
+    description: "Série d'affiches et d'illustrations vectorielles réalisées sur Illustrator, entre affiches de voyage (Lisbonne, Venise, Vernet-les-Bains, Lohéac) et compositions plus graphiques pensées comme des affiches décoratives. Un terrain de jeu pour explorer la couleur, le cadrage et les aplats.",
+    tags: ["Illustration vectorielle", "Affiche", "Série personnelle"]
   },
   {
     id: "photos-personnelles",

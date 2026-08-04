@@ -27,8 +27,10 @@
      Sofia Pro-> Nunito Sans    (géométrique arrondie, 'a' à deux étages)
      Logo manuscrit -> Gluten   (manuscrite épaisse à terminaisons rondes) */
   --font-display:  'Hanken Grotesk', system-ui, sans-serif;
-  --font-subtitle: 'Nunito Sans', 'Hanken Grotesk', system-ui, sans-serif;
-  --font-script:   'Gluten', cursive;
+  /* --font-subtitle: 'Nunito Sans', 'Hanken Grotesk', system-ui, sans-serif; */
+  /* --font-script:   'Gluten', cursive; */
+  --font-subtitle: "scandia-web", sans-serif;
+  --font-script:    "scandia-web", sans-serif;
   --font-body:     'Poppins', system-ui, sans-serif;
 
   /* --- layout --- */
@@ -71,7 +73,8 @@ ul{ margin:0; padding:0; list-style:none; }
 
 .script{
   font-family: var(--font-script);
-  font-weight: 60;
+  font-weight: 700;
+  font-style: normal;
   color: var(--coral);
   font-size: 1em;
   letter-spacing: -.01em;
@@ -293,7 +296,7 @@ ul{ margin:0; padding:0; list-style:none; }
   align-items: center;
 }
 .nav__logo-img{
-  height: 42px;
+  height: 60px;
   width: auto;
   display: block;
   transition: transform .4s var(--ease);
@@ -627,6 +630,7 @@ ul{ margin:0; padding:0; list-style:none; }
   margin: 0 0 4px;
 }
 .timeline-item__place{
+  font-family: var(--font-subtitle);
   color: var(--coral-dark);
   font-weight: 500;
   font-size: .92rem;
@@ -1187,6 +1191,7 @@ ul{ margin:0; padding:0; list-style:none; }
   margin: 0 0 6px;
 }
 .modal__subtitle{
+  font-family: var(--font-subtitle);
   color: var(--coral-dark);
   font-weight: 500;
   margin: 0 0 22px;
