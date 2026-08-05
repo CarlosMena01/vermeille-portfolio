@@ -546,13 +546,14 @@ ul{ margin:0; padding:0; list-style:none; }
 }
 
 .timeline-tabs{
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
   gap: 6px;
   background: var(--white);
   padding: 6px;
   border-radius: 999px;
   box-shadow: var(--shadow-soft);
-  margin-bottom: 56px;
+  margin: 0 auto 56px;
 }
 .timeline-tab{
   border: none;
