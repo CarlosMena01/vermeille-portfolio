@@ -1,5 +1,43 @@
 /* Données des projets — reconstruites à partir du portfolio PDF de Vermeille Pontoire */
 
+/* =========================================================================
+   ORDRE D'AFFICHAGE DU PORTFOLIO
+   -------------------------------------------------------------------------
+   C'est cette liste — et elle seule — qui décide de l'ordre des projets
+   dans la grille. Pour réorganiser : déplacer une ligne vers le haut ou
+   vers le bas, rien d'autre à toucher.
+
+   • un projet absent de cette liste s'affiche quand même, à la fin
+   • un id qui n'existe pas ici est simplement ignoré
+   ========================================================================= */
+const PROJECT_ORDER = [
+  "vermeille",                   // Vermeille — identité de marque personnelle
+  "gobelet",                     // Gobelet La Piautre
+  "brochure-annuelle",           // Brochure Annuelle — Richou Voyages
+  "festival-v1",                 // Festival du cinéma espagnol — version 1
+  "vagabond",                    // Vagabond — application de mobilité
+  "illustration-affiches-pop",    // Affiches pop
+  "festival-v2",                 // Festival du cinéma espagnol — version 2
+  "illustrations-voyage",        // Illustrations de voyage — Sardaigne & Turquie
+  "cohezia",                     // Refonte des entités — Richou Voyages
+  "orelsan",                     // Civilisation — Orelsan
+  "illustration-architecture",   // Muralla Roja
+  "brochure-inspiration",        // Brochure Inspiration — Richou Voyages
+  "photos-personnelles",         // Photos personnelles
+  "cardgame",                    // Traits de caractère — jeu de cartes
+  "illustration-route",          // Sur la route — Vernet-les-Bains & Lohéac
+  "absolut",                     // Absolut Mythologik
+  "illustration-venise",         // Venise
+  "pochette-cadeau",             // Pochette Cadeau — Richou Voyages
+  "illustration-lisbonne",       // Lisbonne
+  "serigraphie-artisanale",      // Sérigraphie artisanale — tote bag
+  "photos-studiom",              // Photo Studio M
+  "illustration-fenetre",        // Vue sur Santorin
+  "serigraphie-plat",            // Sérigraphie à plat
+  "illustration-plage",          // Bord de mer
+  "pictogrammes",                // Pictogrammes voyage
+];
+
 const PROJECTS = [
   {
     id: "vermeille",

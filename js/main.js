@@ -153,9 +153,29 @@ document.addEventListener('DOMContentLoaded', () => {
     photographie: 'Photographie'
   };
 
-  const renderMasonry = () => {
-    masonryEl.innerHTML = PROJECTS.map(p => `
-      <article class="card" data-category="${p.category}" data-id="${p.id}">
+  /* Trie les projets selon PROJECT_ORDER (js/projects-data.js).
+     Tout projet absent de cette liste est conservé et placé à la fin,
+     dans l'ordre du fichier — aucun projet ne peut disparaître. */
+  const orderedProjects = () => {
+    const order = typeof PROJECT_ORDER !== 'undefined' ? PROJECT_ORDER : [];
+    const rank = new Map(order.map((id, i) => [id, i]));
+    return PROJECTS.slice().sort((a, b) =>
+      (rank.has(a.id) ? rank.get(a.id) : Infinity) -
+      (rank.has(b.id) ? rank.get(b.id) : Infinity)
+    );
+  };
+
+  let currentFilter = 'all';
+  let currentCols = 0;
+
+  /* Les cartes sont créées une seule fois puis simplement déplacées entre les
+     colonnes : on conserve ainsi leurs écouteurs et l'état des animations. */
+  const cardEls = orderedProjects().map(p => {
+    const el = document.createElement('article');
+    el.className = 'card';
+    el.dataset.category = p.category;
+    el.dataset.id = p.id;
+    el.innerHTML = `
         <div class="card__media">
           <span class="card__tag">${p.categoryLabel}</span>
           <img src="${p.cover}" alt="${p.title}" loading="lazy">
@@ -166,36 +186,57 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="card__body">
           <h3 class="card__title">${p.title}</h3>
           <p class="card__subtitle">${p.subtitle}</p>
-        </div>
-      </article>
-    `).join('');
-    observeReveals(masonryEl);
+        </div>`;
+    el.addEventListener('click', () => openModal(p.id));
+    el.addEventListener('mouseenter', () => cursorDot && cursorDot.classList.add('is-hover'));
+    el.addEventListener('mouseleave', () => cursorDot && cursorDot.classList.remove('is-hover'));
+    return el;
+  });
 
-    masonryEl.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('click', () => openModal(card.dataset.id));
-      card.addEventListener('mouseenter', () => cursorDot && cursorDot.classList.add('is-hover'));
-      card.addEventListener('mouseleave', () => cursorDot && cursorDot.classList.remove('is-hover'));
-    });
+  // doit rester synchronisé avec les media queries de .masonry (css/style.css)
+  const columnCount = () => {
+    const w = window.innerWidth;
+    if (w <= 620) return 1;
+    if (w <= 980) return 2;
+    return 3;
   };
 
-  renderMasonry();
+  /* Répartition EN LIGNE : la carte 1 va en haut de la colonne 1, la 2 en haut
+     de la colonne 2, la 3 en haut de la colonne 3, la 4 sous la 1re… L'ordre de
+     PROJECT_ORDER se lit donc de gauche à droite, ligne par ligne. */
+  const layoutMasonry = () => {
+    const cols = columnCount();
+    const visible = cardEls.filter(el =>
+      currentFilter === 'all' || el.dataset.category === currentFilter);
 
-  let currentFilter = 'all';
+    masonryEl.textContent = '';
+    const colEls = Array.from({ length: cols }, () => {
+      const col = document.createElement('div');
+      col.className = 'masonry__col';
+      masonryEl.appendChild(col);
+      return col;
+    });
+    visible.forEach((el, i) => colEls[i % cols].appendChild(el));
+
+    currentCols = cols;
+    observeReveals(masonryEl);
+  };
+
+  layoutMasonry();
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('is-active'));
       btn.classList.add('is-active');
       currentFilter = btn.dataset.filter;
-      applyFilter();
+      layoutMasonry();
     });
   });
 
-  const applyFilter = () => {
-    document.querySelectorAll('.card').forEach(card => {
-      const match = currentFilter === 'all' || card.dataset.category === currentFilter;
-      card.classList.toggle('is-hidden', !match);
-    });
-  };
+  // on ne redessine que si le nombre de colonnes change réellement
+  window.addEventListener('resize', () => {
+    if (columnCount() !== currentCols) layoutMasonry();
+  }, { passive: true });
 
   /* ---------------- Project modal ---------------- */
   const modal = document.getElementById('modal');

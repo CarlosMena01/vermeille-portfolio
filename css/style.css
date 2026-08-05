@@ -764,16 +764,24 @@ ul{ margin:0; padding:0; list-style:none; }
   color: var(--cream);
 }
 
+/* Colonnes réelles (et non column-count, qui remplit verticalement) : le JS y
+   répartit les cartes ligne par ligne. Le NOMBRE de colonnes et ses points de
+   rupture sont définis uniquement dans columnCount() de js/main.js. */
 .masonry{
-  column-count: 3;
-  column-gap: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
 }
-@media (max-width: 980px){ .masonry{ column-count: 2; } }
-@media (max-width: 620px){ .masonry{ column-count: 1; } }
+.masonry__col{
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
 .card{
-  break-inside: avoid;
-  margin-bottom: 24px;
+  margin-bottom: 0;
   border-radius: var(--radius-md);
   overflow: hidden;
   position: relative;
