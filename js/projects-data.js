@@ -103,7 +103,12 @@ const PROJECTS = [
       "assets/img/cohezia-detail-2.png",
       "assets/img/cohezia-detail-3.png",
       "assets/img/cohezia-detail-4.png",
-      "assets/img/cohezia-detail-5.png"
+      "assets/img/cohezia-detail-5.png",
+      "assets/img/cohezia-detail-6.jpg",
+      "assets/img/cohezia-detail-7.jpg",
+      "assets/img/cohezia-detail-8.jpg",
+      "assets/img/cohezia-detail-9.jpg",
+      "assets/img/cohezia-detail-10.jpg"
     ],
     description: "J'ai eu pour projet de concevoir les identités visuelles et la charte graphique de chacune des entités, en m'adaptant à l'identité existante de Richou Voyages, afin que l'on comprenne que ces marques font partie de l'entreprise. Ensuite, j'ai dû décliner différents supports en fonction des marques.",
     tags: ["Charte graphique", "Papeterie", "Déclinaisons de marque"]
