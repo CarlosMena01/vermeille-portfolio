@@ -86,33 +86,61 @@ document.addEventListener('DOMContentLoaded', () => {
   updateParallax();
 
   /* ---------------- Timeline ---------------- */
+  const parcoursEl = document.getElementById('parcours');
   const timelineEl = document.getElementById('timeline');
   const tabs = document.querySelectorAll('.timeline-tab');
 
-  const renderTimeline = (track) => {
-    const items = TIMELINE[track] || [];
-    timelineEl.innerHTML = items.map(item => `
-      <div class="timeline-item">
+  const MONTHS = ['janvier','février','mars','avril','mai','juin',
+                  'juillet','août','septembre','octobre','novembre','décembre'];
+
+  // "Mai — Juin 2021" -> 202105 ; "2022 — 2024" -> 202206 (mi-année par défaut)
+  const dateKey = (raw) => {
+    const s = raw.toLowerCase();
+    const year = (s.match(/\d{4}/) || [])[0];
+    const monthIdx = MONTHS.findIndex(m => s.includes(m));
+    return (year ? Number(year) : 0) * 100 + (monthIdx >= 0 ? monthIdx + 1 : 6);
+  };
+
+  const TRACK_LABEL = { formation: 'Formation', experience: 'Expérience' };
+
+  const renderTimeline = () => {
+    const entries = [
+      ...(TIMELINE.formation || []).map(i => ({ ...i, track: 'formation' })),
+      ...(TIMELINE.experience || []).map(i => ({ ...i, track: 'experience' }))
+    ].sort((a, b) => dateKey(a.date) - dateKey(b.date));
+
+    timelineEl.innerHTML = entries.map(item => `
+      <div class="timeline-item timeline-item--${item.track}">
         <span class="timeline-item__dot"></span>
-        <p class="timeline-item__date">${item.date}</p>
-        <div class="timeline-item__card">
-          <h3 class="timeline-item__title">${item.title}</h3>
-          <p class="timeline-item__place">${item.place}</p>
+        <div class="timeline-item__inner">
+          <p class="timeline-item__date">${item.date}</p>
+          <div class="timeline-item__card">
+            <span class="timeline-item__track">${TRACK_LABEL[item.track]}</span>
+            <h3 class="timeline-item__title">${item.title}</h3>
+            <p class="timeline-item__place">${item.place}</p>
+          </div>
         </div>
       </div>
     `).join('');
     observeReveals(timelineEl);
   };
 
+  const setTimelineFocus = (track) => {
+    parcoursEl.classList.remove('is-focus-formation', 'is-focus-experience');
+    parcoursEl.classList.add(`is-focus-${track}`);
+  };
+
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       tabs.forEach(t => t.classList.remove('is-active'));
       tab.classList.add('is-active');
-      renderTimeline(tab.dataset.track);
+      setTimelineFocus(tab.dataset.track);
     });
   });
 
-  renderTimeline('formation');
+  renderTimeline();
+  const activeTab = document.querySelector('.timeline-tab.is-active');
+  setTimelineFocus(activeTab ? activeTab.dataset.track : 'formation');
 
   /* ---------------- Portfolio masonry ---------------- */
   const masonryEl = document.getElementById('masonry');
