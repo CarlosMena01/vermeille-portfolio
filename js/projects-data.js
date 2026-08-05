@@ -231,30 +231,18 @@ const PROJECTS = [
     tags: ["Sérigraphie", "Illustration"]
   },
   {
-    id: "illustration-sardaigne",
-    title: "La Sardaigne",
-    subtitle: "Illustration de voyage",
+    id: "illustrations-voyage",
+    title: "Illustrations de voyage",
+    subtitle: "Sardaigne & Turquie",
     category: "illustrations",
     categoryLabel: "Illustrations",
     cover: "assets/img/illustration-sardaigne.jpg",
     gallery: [
-      "assets/img/illustration-sardaigne.jpg"
-    ],
-    description: "Illustration façon affiche de voyage vintage, réalisée pour évoquer les falaises et les eaux turquoise de la Sardaigne. Un exercice de style entre paysage vectoriel et ambiance estivale, dans la continuité de mon travail avec Richou Voyages.",
-    tags: ["Illustration vectorielle", "Voyage"]
-  },
-  {
-    id: "illustration-turquie",
-    title: "La Turquie",
-    subtitle: "Illustration de voyage",
-    category: "illustrations",
-    categoryLabel: "Illustrations",
-    cover: "assets/img/illustration-turquie.jpg",
-    gallery: [
+      "assets/img/illustration-sardaigne.jpg",
       "assets/img/illustration-turquie.jpg"
     ],
-    description: "Scène illustrée d'une terrasse en Cappadoce au coucher du soleil, entre cheminées de fées et tapis traditionnels. Un travail sur la lumière et la couleur pour transmettre l'ambiance chaleureuse d'un voyage en Turquie.",
-    tags: ["Illustration vectorielle", "Voyage"]
+    description: "Réalisation d'une illustration de la Sardaigne et d'une illustration de la Turquie. Je devais réaliser différentes illustrations de paysages pour une campagne de publicité visant à promouvoir différentes destinations.",
+    tags: ["Illustration vectorielle", "Campagne publicitaire", "Voyage"]
   },
   {
     id: "illustration-lisbonne",
@@ -266,8 +254,8 @@ const PROJECTS = [
     gallery: [
       "assets/img/illustration-lisbonne.png"
     ],
-    description: "Affiche de voyage consacrée à Lisbonne, construite autour des façades colorées et de leurs azulejos. Un travail sur les motifs et les aplats pour restituer l'atmosphère des rues en pente de la ville.",
-    tags: ["Illustration vectorielle", "Affiche", "Voyage"]
+    description: "Réalisation d'une illustration à partir d'une photo représentant un paysage de Lisbonne, construite autour des façades colorées et de leurs azulejos. Illustration réalisée sur Illustrator à l'aide de différents outils.",
+    tags: ["Illustration vectorielle", "D'après photo", "Voyage"]
   },
   {
     id: "illustration-route",
@@ -280,8 +268,8 @@ const PROJECTS = [
       "assets/img/illustration-vernet.png",
       "assets/img/illustration-loheac.jpg"
     ],
-    description: "Deux affiches de voyage autour du véhicule et de l'évasion : un combi Volkswagen sur une route de montagne à Vernet-les-Bains, et une américaine des années 50 pour Lohéac. Même format et même traitement en aplats vectoriels pour former une série cohérente.",
-    tags: ["Illustration vectorielle", "Affiche", "Voyage"]
+    description: "Réalisation de deux illustrations de voyage destinées à être imprimées sous forme d'affiches, sur le thème des véhicules de collection, pour l'événement « La Baule Automobile ». Les deux illustrations ont été réalisées sur Illustrator.",
+    tags: ["Illustration vectorielle", "Affiche", "Événement"]
   },
   {
     id: "illustration-venise",
@@ -293,47 +281,47 @@ const PROJECTS = [
     gallery: [
       "assets/img/illustration-venise.png"
     ],
-    description: "Scène vénitienne en vue isométrique : un canal, son pont et ses façades pastel reconstitués comme une maquette. Un exercice de construction géométrique et de palette adoucie.",
-    tags: ["Illustration vectorielle", "Isométrie"]
+    description: "Réalisation de l'illustration d'une ville à l'aide des outils 3D du logiciel Illustrator. J'ai créé une scène vénitienne en vue isométrique : un canal, son pont et ses façades pastel reconstitués comme une maquette.",
+    tags: ["Illustration vectorielle", "Outils 3D Illustrator", "Isométrie"]
   },
   {
     id: "illustration-plage",
     title: "Bord de mer",
-    subtitle: "Illustration",
+    subtitle: "Illustration d'après photo",
     category: "illustrations",
     categoryLabel: "Illustrations",
     cover: "assets/img/illustration-plage.jpg",
     gallery: [
       "assets/img/illustration-plage.jpg"
     ],
-    description: "Deux silhouettes accoudées à une rambarde sous un parasol, face à un coucher de soleil sur la mer. Une illustration tout en dégradés chauds, centrée sur la lumière de fin de journée.",
-    tags: ["Illustration vectorielle"]
+    description: "Réalisation d'une illustration sur Illustrator, à partir d'une photo. Illustration représentant deux personnes face à un coucher de soleil sur la mer.",
+    tags: ["Illustration vectorielle", "D'après photo"]
   },
   {
     id: "illustration-fenetre",
-    title: "Vue sur mer",
-    subtitle: "Illustration d'intérieur",
+    title: "Vue sur Santorin",
+    subtitle: "Illustration d'après photo",
     category: "illustrations",
     categoryLabel: "Illustrations",
     cover: "assets/img/illustration-fenetre.jpg",
     gallery: [
       "assets/img/illustration-fenetre.jpg"
     ],
-    description: "Une pièce ouverte sur la mer, ses murs couverts de petites affiches encadrées. Un travail sur la perspective et sur le contraste entre l'intérieur clair et le bleu profond de l'extérieur.",
-    tags: ["Illustration vectorielle", "Intérieur"]
+    description: "Réalisation d'une illustration à partir d'une photo représentant un paysage de la ville de Santorin, depuis une petite boutique d'artiste. Illustration réalisée sur Illustrator à l'aide des différents outils.",
+    tags: ["Illustration vectorielle", "D'après photo"]
   },
   {
     id: "illustration-architecture",
-    title: "Perspective",
-    subtitle: "Illustration d'architecture",
+    title: "Muralla Roja",
+    subtitle: "Affiche sérigraphiée",
     category: "illustrations",
     categoryLabel: "Illustrations",
     cover: "assets/img/illustration-architecture.jpg",
     gallery: [
       "assets/img/illustration-architecture.jpg"
     ],
-    description: "Composition architecturale en volumes simples, traitée dans une gamme de roses et de bleus poudrés. Une recherche graphique sur la lumière, les ombres portées et l'épure des formes.",
-    tags: ["Illustration vectorielle", "Architecture"]
+    description: "Réalisation d'une affiche pour impression en sérigraphie sur un thème choisi. J'ai décidé de réaliser sur Illustrator un graphisme représentant un paysage qui m'intrigue beaucoup, en variant entre aplats et dégradés.",
+    tags: ["Illustration vectorielle", "Sérigraphie", "Affiche"]
   },
   {
     id: "illustration-affiches-pop",
@@ -346,7 +334,7 @@ const PROJECTS = [
       "assets/img/illustration-aperol.jpg",
       "assets/img/illustration-bottes.jpg"
     ],
-    description: "Deux affiches décoratives pensées pour une chambre : un spritz sur damier ondulé et une paire de bottes santiag fleuries. Palette saturée de roses et d'oranges, formes pleines et motifs assumés.",
+    description: "Réalisation d'affiches décoratives pensées pour une chambre : un spritz sur damier ondulé et une paire de bottes santiag fleuries. Palette saturée de roses et d'oranges vifs pour une harmonie dynamique.",
     tags: ["Illustration vectorielle", "Affiche", "Décoration"]
   },
   {
