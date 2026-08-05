@@ -32,6 +32,20 @@ const PROJECTS = [
     description: "Création de l'identité visuelle d'un festival de cinéma espagnol, avec la contrainte de réaliser une typographie pour tout un alphabet, ainsi que différents supports de communication demandés pour l'événement : carton d'invitation, affiche, cartes de visite, page de site internet, logo et quelques goodies. Nous avons fait plusieurs propositions avant de sélectionner la meilleure, que j'ai déclinée ensuite.",
     tags: ["Typographie sur-mesure", "Affiche", "Goodies"]
   },
+    {
+    id: "brochure-annuelle",
+    title: "Brochure Annuelle",
+    subtitle: "Richou Voyages",
+    category: "print",
+    categoryLabel: "Print et Édition",
+    cover: "assets/img/brochure-annuelle-cover.jpg",
+    gallery: [
+      "assets/img/brochure-annuelle-cover.jpg",
+      "assets/img/brochure-annuelle-detail-1.jpg"
+    ],
+    description: "Richou Voyages sort tous les ans une brochure annuelle avec des voyages pour l'été et l'hiver, destinée à une cible de personnes âgées qui souhaitent voyager avec des séjours entièrement organisés, accompagnés d'un guide et d'accompagnateurs. Mon objectif était de réaliser la couverture de cette brochure, ainsi que la mise en page des pages annexes et des pages produits.",
+    tags: ["Couverture", "Mise en page"]
+  },
   {
     id: "festival-v2",
     title: "Festival du cinéma espagnol",
@@ -124,20 +138,6 @@ const PROJECTS = [
     ],
     description: "Richou Voyages a sorti une nouvelle brochure dans le but de promouvoir des voyages auprès d'une cible plus jeune : familles, couples, solos… et souhaitait une brochure entièrement repensée, à l'image de cette nouvelle cible. J'ai donc eu pour objectif de réaliser toute la création et la mise en page de cette brochure.",
     tags: ["Mise en page", "Édition"]
-  },
-  {
-    id: "brochure-annuelle",
-    title: "Brochure Annuelle",
-    subtitle: "Richou Voyages",
-    category: "print",
-    categoryLabel: "Print et Édition",
-    cover: "assets/img/brochure-annuelle-cover.jpg",
-    gallery: [
-      "assets/img/brochure-annuelle-cover.jpg",
-      "assets/img/brochure-annuelle-detail-1.jpg"
-    ],
-    description: "Richou Voyages sort tous les ans une brochure annuelle avec des voyages pour l'été et l'hiver, destinée à une cible de personnes âgées qui souhaitent voyager avec des séjours entièrement organisés, accompagnés d'un guide et d'accompagnateurs. Mon objectif était de réaliser la couverture de cette brochure, ainsi que la mise en page des pages annexes et des pages produits.",
-    tags: ["Couverture", "Mise en page"]
   },
   {
     id: "pochette-cadeau",
