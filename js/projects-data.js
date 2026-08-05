@@ -78,17 +78,18 @@ const PROJECTS = [
   },
   {
     id: "cohezia",
-    title: "Cohézia",
-    subtitle: "Refonte des entités Richou Voyages",
+    title: "Refonte des entités",
+    subtitle: "Richou Voyages",
     category: "visuelles",
     categoryLabel: "Identités visuelles",
-    cover: "assets/img/cohezia-cover.jpg",
+    cover: "assets/img/cohezia-cover.png",
     gallery: [
-      "assets/img/cohezia-cover.jpg",
-      "assets/img/cohezia-detail-1.jpg",
-      "assets/img/cohezia-detail-2.jpg",
-      "assets/img/cohezia-detail-3.jpg",
-      "assets/img/cohezia-detail-4.jpg"
+      "assets/img/cohezia-cover.png",
+      "assets/img/cohezia-detail-1.png",
+      "assets/img/cohezia-detail-2.png",
+      "assets/img/cohezia-detail-3.png",
+      "assets/img/cohezia-detail-4.png",
+      "assets/img/cohezia-detail-5.png"
     ],
     description: "J'ai eu pour projet de concevoir les identités visuelles et la charte graphique de chacune des entités, en m'adaptant à l'identité existante de Richou Voyages, afin que l'on comprenne que ces marques font partie de l'entreprise. Ensuite, j'ai dû décliner différents supports en fonction des marques.",
     tags: ["Charte graphique", "Papeterie", "Déclinaisons de marque"]
@@ -172,7 +173,7 @@ const PROJECTS = [
   {
     id: "orelsan",
     title: "Civilisation — Orelsan",
-    subtitle: "Projet fictif — pochette d'album",
+    subtitle: "Pochette d'album",
     category: "print",
     categoryLabel: "Print et Édition",
     cover: "assets/img/orelsan-cover.jpg",
@@ -182,12 +183,12 @@ const PROJECTS = [
       "assets/img/orelsan-detail-2.png"
     ],
     description: "Réalisation de l'identité graphique et de la campagne de communication de l'album Civilisation de l'artiste Orelsan. Ce projet était un projet fictif né d'une réinterprétation de la direction artistique de cet album à ma manière, inspiré de la technique de la risographie.",
-    tags: ["Projet fictif", "Direction artistique", "Risographie"]
+    tags: ["Direction artistique", "Risographie"]
   },
   {
     id: "absolut",
     title: "Absolut Mythologik",
-    subtitle: "Affiche de campagne — projet fictif",
+    subtitle: "Affiche de campagne",
     category: "print",
     categoryLabel: "Print et Édition",
     cover: "assets/img/absolut-cover.jpg",
@@ -196,7 +197,7 @@ const PROJECTS = [
       "assets/img/absolut-detail-1.jpg"
     ],
     description: "Réalisation d'une affiche pour la sortie de la nouvelle bouteille « Absolut » de la marque de vodka, avec comme thème de campagne la mythologie. J'ai décidé de réutiliser l'image de Méduse ainsi que l'idée de ses cheveux de serpent, tout en y mêlant une notion artistique avec des illustrations à la manière d'Andy Warhol.",
-    tags: ["Affiche", "Projet fictif"]
+    tags: ["Affiche", "Mythologie"]
   },
   {
     id: "serigraphie-artisanale",
@@ -210,7 +211,7 @@ const PROJECTS = [
       "assets/img/serigraphie-artisanale-detail-1.jpg",
       "assets/img/serigraphie-artisanale-detail-2.jpg",
       "assets/img/serigraphie-artisanale-detail-3.jpg",
-      "assets/img/serigraphie-artisanale-detail-4.jpg"
+      "assets/img/serigraphie-artisanale-detail-4.png"
     ],
     description: "Durant mes études à Studio M, j'ai eu l'occasion de réaliser un motif en sérigraphie manuelle. Le but était tout d'abord de créer un motif sur Illustrator, puis de l'incruster sur un support à l'aide de la technique manuelle de la sérigraphie, pour l'imprimer sur un tote bag.",
     tags: ["Sérigraphie manuelle", "Motif"]
@@ -298,7 +299,7 @@ const PROJECTS = [
   {
     id: "illustration-plage",
     title: "Bord de mer",
-    subtitle: "Illustration d'ambiance",
+    subtitle: "Illustration",
     category: "illustrations",
     categoryLabel: "Illustrations",
     cover: "assets/img/illustration-plage.jpg",
@@ -306,7 +307,7 @@ const PROJECTS = [
       "assets/img/illustration-plage.jpg"
     ],
     description: "Deux silhouettes accoudées à une rambarde sous un parasol, face à un coucher de soleil sur la mer. Une illustration tout en dégradés chauds, centrée sur la lumière de fin de journée.",
-    tags: ["Illustration vectorielle", "Ambiance"]
+    tags: ["Illustration vectorielle"]
   },
   {
     id: "illustration-fenetre",
